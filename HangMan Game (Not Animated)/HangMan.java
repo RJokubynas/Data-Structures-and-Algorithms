@@ -15,7 +15,7 @@ public class HangMan 				//class name
 
 	public static void main(String [] args)
 	{
-		FileIO reader = new FileIO();			//reader method from class FileIO
+	FileIO reader = new FileIO();			//reader method from class FileIO
         String[] inputs = reader.load(System.getProperty("user.dir") + "\\dictionary.txt");   	 //Reading the File as a String array (location changed to where the dictionary file was relocated)
         String x = "";							//will contain string for game continuation or termination
         boolean check = false;					//check for game continuation or termination
@@ -70,7 +70,8 @@ public class HangMan 				//class name
 
         	System.out.println("Do you want to play again? \n(Enter 'no' to quit or anything else to play again.)\n");		//print
         	x = in.nextLine();				//take input to decide game termination or continuation
-        	if(x.equals("no"))				//if input was 'no', terminate
+        	guess.clear();
+		if(x.equals("no"))				//if input was 'no', terminate
         	{
         		check = true;				//termination approved
         		System.out.println("\nTerminated");			//print
