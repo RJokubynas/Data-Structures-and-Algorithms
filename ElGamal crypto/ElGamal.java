@@ -12,9 +12,12 @@ public class ElGamal{
 		//long aliceP = 248529771;				//Alice's prime number
 		//long aliceG = 27441;					//Alice's generator
 		//long aliceGMP = 84145081;			//Alice's g^x modulo p
-		
+		System.out.println("Public key details");
+		System.out.println("Enter prime number:");
 		long aliceP = in.nextLong();
+		System.out.println("Enter generator:");
 		long aliceG = in.nextLong();
+		System.out.println("Enter g^x modulo p:");
 		long aliceGMP = in.nextLong();
 		
 		//Example cypher
@@ -22,7 +25,10 @@ public class ElGamal{
 		//long bobC1 = 152680761;				//Bob's c1				
 		//long bobC2 = 7436751;				//Bob's
 		
+		//encoded message cipher
+		System.out.println("Enter 1st number of the cipher:");
 		long bobC1 = in.nextLong();
+		System.out.println("Enter 2nd number of the cipher:");
 		long bobC2 = in.nextLong();
 
 		for(int x=0; x<=aliceP; x++)			//Loop to run through the values 0 to p
