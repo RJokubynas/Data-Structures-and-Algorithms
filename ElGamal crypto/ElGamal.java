@@ -26,9 +26,10 @@ public class ElGamal{
 		//long bobC2 = 7436751;				//Bob's
 		
 		//encoded message cipher
-		System.out.println("Enter 1st number of the cipher:");
+		System.out.println("\nCipher details:");
+		System.out.println("Enter 1st number:");
 		long bobC1 = in.nextLong();
-		System.out.println("Enter 2nd number of the cipher:");
+		System.out.println("Enter 2nd number:");
 		long bobC2 = in.nextLong();
 
 		for(int x=0; x<=aliceP; x++)			//Loop to run through the values 0 to p
