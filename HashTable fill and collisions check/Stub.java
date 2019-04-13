@@ -3,11 +3,6 @@ public class Stub {
 	public static void main(String[] args) {
 		
 		FileIO reader = new FileIO();			//reader method from class FileIO
-        //String[] inputs = reader.load(System.getProperty("user.dir") + "\\dictionary.txt");   	 //Reading the File as a String array (location is where the java/java class files are)
-		
-		//Scanner myscanner = new Scanner(System.in);
-		//int items = myscanner.nextInt();
-		//myscanner.nextLine();
 		
 		String[] contents = reader.load(System.getProperty("user.dir") + "\\dictionary.txt");				//fills the contents array with words from file
 		int items = contents.length;																		//declares length of array
@@ -99,8 +94,6 @@ class Solution {
 			return indexOfMod;
 		}
 		
-
-		//fill this in so as to minimize collisions 
 		//takes in the HashTable object and the word to be found
 		//the only thing you can do with the HashTable object is call "check"
 		//this method should return the slot in the hashtable where the word is
